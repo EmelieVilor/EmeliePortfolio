@@ -1,0 +1,23 @@
+:root {
+    --dark: #222831;
+    --lighter: #31363F;
+    --blue: #76ABAE;
+    --gray: #EEEEEE;
+} 
+
+.lightmode {
+    --dark: #ffffff;
+    --lighter: #daecea;
+    --gray: #31363F;
+    --darkaccent: #31363F;
+    --accent: #90bfc2;
+    --white: #222831;
+    transition: ease-in-out 0.2s;
+}
+
+.spacing {
+    --small: 2rem;
+    --medium: 3rem;
+    --large: 5rem;
+}
+
