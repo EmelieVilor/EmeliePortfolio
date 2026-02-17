@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Emelie Vilör | Web Design Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
     <link
       rel="stylesheet"
@@ -19,9 +20,12 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="../css/main.css"/>
-    <script src="../JS/script.js" defer></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/modals.js" defer></script>
   </head>
+
+  <!-- Header -->
 
   <body>
     <nav class="top-nav">
@@ -53,7 +57,10 @@
             my previous projects or download my full CV below!
           </p>
           <div class="buttons">
-            <a id="cvBtn" href="/documents/EmelieVilorCV_2026.pdf" download="CV2026"
+            <a
+              id="cvBtn"
+              href="/documents/EmelieVilor_2026_eng.pdf"
+              download="CV2026"
               >Download my CV! <i class="fa-solid fa-download"></i
             ></a>
             <a href="#projects-section" id="projectsBtn"
@@ -64,6 +71,8 @@
       </div>
     </header>
 
+    <!-- Skills -->
+
     <section id="skills-section">
       <div class="skills-container">
         <div class="tech-skills">
@@ -71,11 +80,11 @@
 
           <h4>HTML / CSS</h4>
           <div class="line line1"></div>
-          <h4>JavaScript</h4>
+          <h4>JavaScript, TypeScript</h4>
           <div class="line line2"></div>
           <h4>React</h4>
           <div class="line line3"></div>
-          <h4>Bootstrap, Tailwind, Material UI etc.</h4>
+          <h4>Bootstrap, Tailwind, Material UI</h4>
           <div class="line line4"></div>
           <h4>Adobe CS</h4>
           <div class="line line5"></div>
@@ -88,13 +97,13 @@
 
           <h4>Web Development</h4>
           <div class="line line7"></div>
-          <h4>Interaction Design</h4>
+          <h4>UX/UI Design</h4>
           <div class="line line8"></div>
           <h4>Concept Development</h4>
           <div class="line line9"></div>
-          <h4>Graphic Design</h4>
-          <div class="line line10"></div>
           <h4>Service Design</h4>
+          <div class="line line10"></div>
+          <h4>Graphic Design</h4>
           <div class="line line11"></div>
           <h4>Technical Writing</h4>
           <div class="line line12"></div>
@@ -102,85 +111,251 @@
       </div>
     </section>
 
+    <!-- Projects -->
+
     <section id="projects-section">
       <h2>Portfolio projects</h2>
       <h3>Mix of different school projects.</h3>
 
       <div class="projects-container">
         <div class="card">
-            <h2>Student Portal</h2>
-            <p>Student portal website. Using React and Bootstrap.</p>
-            <p>
-              <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-              ><i class="fa-brands fa-js"></i>
-            </p>
-            <div class="cardBtns">
-            <button class="modalBtn" id="modalBtn1">Learn More</button>
-            <button class="gitBtn">Github <i class="fa-brands fa-github"></i></button>
-            </div>
+          <h2>Student Portal</h2>
+          <p>Student portal website example.</p>
+          <p class="icons">
+            <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
+            ><i class="fa-brands fa-js"></i> <i class="fa-brands fa-react"></i>
+          </p>
+          <div class="cardBtns">
+            <button class="modalBtn" id="modalBtn1" data-target="project1">
+              Read More
+            </button>
+            <button class="gitBtn">
+              Github <i class="fa-brands fa-github"></i>
+            </button>
+          </div>
         </div>
         <div class="card">
           <h2>Kan Ban</h2>
-          <p>Kan Ban board with drag and drop. Made with React.</p>
-          <p>
+          <p>Responsive Kan Ban board with drag and drop.</p>
+          <p class="icons">
             <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i>
+            ><i class="fa-brands fa-js"></i> <i class="fa-brands fa-react"></i>
           </p>
           <div class="cardBtns">
-            <button class="modalBtn" id="modalBtn2">Learn More</button>
-            <button class="gitBtn">Github <i class="fa-brands fa-github"></i></button>
-            </div>
+            <button class="modalBtn" id="modalBtn2" data-target="project2">
+              Read More
+            </button>
+            <button class="gitBtn">
+              Github <i class="fa-brands fa-github"></i>
+            </button>
+          </div>
         </div>
         <div class="card">
           <h2>Dashboard</h2>
-          <p>Dashboard created in React as a school assignment.</p>
-          <p>
+          <p>Responsive dashboard with *features*.</p>
+          <p class="icons">
             <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i>
+            ><i class="fa-brands fa-js"></i> <i class="fa-brands fa-react"></i>
           </p>
           <div class="cardBtns">
-            <button class="modalBtn" id="modalBtn3">Learn More</button>
-            <button class="gitBtn">Github <i class="fa-brands fa-github"></i></button>
-            </div>
+            <button class="modalBtn" id="modalBtn3" data-target="project3">
+              Read More
+            </button>
+            <button class="gitBtn">
+              Github <i class="fa-brands fa-github"></i>
+            </button>
+          </div>
         </div>
         <div class="card">
-          <h2>Something Else</h2>
-          <p>Master thesis in Interaction Design. Transitioning into an industrial symbiosis.</p>
-          <p>
-            <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i>
+          <h2>Figma Projects</h2>
+          <p>Prototype and sketches for a clothing loop app, and a reading app aimed for community making.</p>
+          <p class="icons">
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-solid fa-pencil"></i>
           </p>
           <div class="cardBtns">
-            <button class="modalBtn" id="modalBtn4">Learn More</button>
-            <button class="gitBtn">Download <i class="fa-solid fa-download"></i></button>
-            </div>
+            <button class="modalBtn" id="modalBtn4" data-target="project4">
+              Read More
+            </button>
+            <button class="gitBtn">
+              Download <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
         </div>
         <div class="card">
           <h2>Master Thesis</h2>
-          <p>Master thesis in Interaction Design. Transitioning into an industrial symbiosis.</p>
           <p>
-            <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i>
+            Master Thesis. Transitioning into an industrial
+            symbiosis.
+          </p>
+          <p class="icons">
+            <i class="fa-brands fa-figma"></i>
+            <i class="fa-solid fa-pencil"></i>
           </p>
           <div class="cardBtns">
-            <button class="modalBtn" id="modalBtn4">Learn More</button>
-            <button class="gitBtn">Download <i class="fa-solid fa-download"></i></button>
-            </div>
+            <button class="modalBtn" id="modalBtn5" data-target="project5">
+              Read More
+            </button>
+            <button class="gitBtn">
+              Download <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
         </div>
         <div class="card">
           <h2>Bachelor Thesis</h2>
-          <p>Master thesis in Interaction Design. Transitioning into an industrial symbiosis.</p>
-          <p>
-            <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i>
+          <p>Bachelor thesis. Designing for exploration and motivation.</p>
+          <p class="icons">
+            <i class="fa-solid fa-pencil"></i>
           </p>
           <div class="cardBtns">
-            <button class="modalBtn" id="modalBtn4">Learn More</button>
-            <button class="gitBtn">Download <i class="fa-solid fa-download"></i></button>
-            </div>
+            <button class="modalBtn" id="modalBtn5" data-target="project6">
+              Read More
+            </button>
+            <button class="gitBtn">
+              Download <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
         </div>
       </div>
+
+      <!-- Modals -->
+
+      <div class="modal-overlay" id="modal-overlay"></div>
+
+      <div class="modal" id="project1">
+        <div class="content">
+          <span class="close-modal">&times;</span>
+          <h2>Student Portal</h2>
+          <h3>React | Bootstrap</h3>
+          <div class="text-content">
+            <img src="../images/code1.jpg" />
+            <div>
+              <p>Assignment, Execution, Reflection.</p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="gitBtn">
+          Github <i class="fa-brands fa-github"></i>
+        </button>
+      </div>
+
+      <div class="modal" id="project2">
+        <div class="content">
+          <span class="close-modal">&times;</span>
+          <h2>Kan Ban Board</h2>
+          <h3>HTML | Css | React</h3>
+          <div class="text-content">
+            <img src="../images/code1.jpg" />
+            <div>
+              <p>Assignment, Execution, Reflection.</p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="gitBtn">
+          Github <i class="fa-brands fa-github"></i>
+        </button>
+      </div>
+
+      <div class="modal" id="project3">
+        <div class="content">
+          <span class="close-modal">&times;</span>
+          <h2>Dashboard</h2>
+          <h3>HTML | Css | JavaScript</h3>
+          <div class="text-content">
+            <img src="../images/code1.jpg" />
+            <div>
+              <p>Assignment, Execution, Reflection.</p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="gitBtn">
+          Github <i class="fa-brands fa-github"></i>
+        </button>
+      </div>
+
+      <div class="modal" id="project4">
+        <div class="content">
+          <span class="close-modal">&times;</span>
+          <h2>Something Else</h2>
+          <h3>Design / Tech areas</h3>
+          <div class="text-content">
+            <img src="../images/code1.jpg" />
+            <div>
+              <p>Assignment, Execution, Reflection.</p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="gitBtn">
+          Github <i class="fa-brands fa-github"></i>
+        </button>
+      </div>
+
+      <div class="modal" id="project5">
+        <div class="content">
+          <span class="close-modal">&times;</span>
+          <h2>Master Thesis</h2>
+          <h3>Interaction Design | Transition Design | Figma</h3>
+          <div class="text-content">
+            <img src="../images/code1.jpg" />
+            <div>
+              <p>Assignment, Execution, Reflection.</p>
+              <ul>
+                <li>list item</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="gitBtn">
+          Download <i class="fa-solid fa-download"></i>
+        </button>
+      </div>
+
+      <div class="modal" id="project6">
+        <div class="content">
+          <span class="close-modal">&times;</span>
+          <h2>Bachelor Thesis</h2>
+          <h3>Interaction Design | Gamification | JustInMind</h3>
+          <div class="text-content">
+            <img src="../images/code1.jpg" />
+            <div>
+              <p>Assignment, Execution, Reflection.</p>
+              <ul>
+                <li>JustInMind</li>
+                <li>list item</li>
+                <li>list item</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="gitBtn">
+          Download <i class="fa-solid fa-download"></i>
+        </button>
+      </div>
     </section>
+
+    <!-- Footer -->
 
     <footer>
       <div class="date-name">
@@ -199,7 +374,7 @@
           ></a>
         </div>
         <div class="logo">
-          <a href="mailto:#"><i class="fa-solid fa-envelope"></i></a>
+          <a href="mailto:emelie.vilor@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
     </footer>
