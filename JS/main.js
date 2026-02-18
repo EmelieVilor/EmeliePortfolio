@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Mode button
 
-const toggleBtn = document.querySelector(".menu-icon");
-const navMenu = document.querySelector(".menu");
+const menuIcon = document.querySelector(".menu-icon");
+const topNav = document.querySelector(".menu");
 
-toggleBtn.addEventListener("click", hamburgerMenu);
+menuIcon.addEventListener("click", hamburgerMenu);
 
 function hamburgerMenu() {
-  navMenu.classList.toggle("show");
-  toggleBtn.classList.toggle("fa-x");
+  topNav.classList.toggle("show");
+  menuIcon.classList.toggle("fa-x");
 }
 
 // Dark-light-mode
