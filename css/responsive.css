@@ -1,7 +1,89 @@
 /* ------------------------------------- responsive layout ----------------------------------------*/
 
+@media screen and (min-width: 700px) {
+    .menu {
+    display: flex;
+    gap: 15px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    }
 
-@media screen and (max-width: 1000px) {}
+    .menu-icon {
+        display: none;
+    }
 
+    header h1 {
+        font-size: 50px;
+    }
 
-@media screen and (max-width: 700px) {}
+    #skills-section {
+            padding-top: 180px;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+
+    .full-resume-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about-picture {
+        margin: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+        header h1 {
+        font-size: 60px;
+    }
+
+      #headerInfo {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ProfilePicture {
+        margin: 0;
+    }
+
+    .buttons {
+        display: flex;
+        width: 100%;
+    }
+
+    .skills-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .skills-container h2 {
+        margin-bottom: 0;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    #about-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 40px 80px;
+    }
+}

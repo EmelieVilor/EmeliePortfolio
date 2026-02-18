@@ -1,5 +1,4 @@
-const toggleBtn = document.querySelector(".menu-icon");
-const navMenu = document.querySelector(".menu");
+// Saved light mode
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedMode = localStorage.getItem("lightmode");
@@ -12,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Mode button
+
+const toggleBtn = document.querySelector(".menu-icon");
+const navMenu = document.querySelector(".menu");
 
 toggleBtn.addEventListener("click", hamburgerMenu);
 

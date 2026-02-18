@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emelie Vilör | Web Design Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
@@ -14,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/main.css" />
-    
+    <link rel="stylesheet" href="../css/responsive.css" />
     <script src="../JS/main.js" defer></script>
 
 </head>
@@ -41,23 +42,18 @@
 <section id="contact">
 
   <div class="contact-container">
-
-
-  <div class="image-container">
   
-    <img id="about_picture" src="/images/bild4_svartvit.jpg" alt="Picture of me. Sitting and holding a coffee cup." />
-
-
-  </div>
+    <img id="about-picture" src="/images/bild4_svartvit.jpg" alt="Picture of me. Sitting and holding a coffee cup." />
 
   <div id="form">
-  <h2>Let's work together! <br> Get in touch using the form below.</h2>
+  <h2>Let's work together!<br> Get in touch using the form below.</h2>
   <form action="mailto:" method="post">
     <h4>E-mail</h4>
     <input type="email" id="femail" />
     <h4>Message</h4>
     <textarea id="subject" name="subject" placeholder="Say hello!"></textarea>
     <input type="submit" id="fsubmit" value="Send message" />
+    <p id="message-sent">Message sent!</p>
   </form>
 </div>
 
