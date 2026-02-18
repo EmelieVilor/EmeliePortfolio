@@ -1,6 +1,6 @@
-@import "/css/variables.css";
-@import "/css/responsive.css";
-@import "/css/typography.css";
+@import "variables.css";
+@import "responsive.css";
+@import "typography.css";
 
 * {
     box-sizing: border-box;
