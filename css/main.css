@@ -12,6 +12,10 @@
 body {
     height: 100vh;
     background-color: var(--dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 
 main {
@@ -681,7 +685,7 @@ form {
 /*---------------------- Footer --------------------- */
 
 footer {
-    padding-top: 80px;
+    padding: 80px 0 50px 0;
     height: 25vh;
     text-align: center;
     background-color: var(--lighter);
