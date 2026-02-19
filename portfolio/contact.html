@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Emelie Vilör | Web Design Portfolio</title>
     <link rel="icon" type="image/png" href="../images/favicon.png">
 
@@ -44,17 +44,22 @@
 
   <div class="contact-container">
   
-    <img id="about-picture" src="../images/bild4_svartvit.jpg" alt="Picture of me. Sitting and holding a coffee cup." />
+    <img id="contact-picture" src="../images/bild4_svartvit.jpg" alt="Picture of me. Sitting and holding a coffee cup." />
 
   <div id="form">
   <h2>Let's work together!<br> Get in touch using the form below.</h2>
-  <form action="mailto:" method="post">
+  <form
+  action="https://formspree.io/f/mykdpdbq"
+  method="POST"
+>
+    <h4>Name</h4>
+    <input type="text" name="name" id="fname" required>
     <h4>E-mail</h4>
-    <input type="email" id="femail" />
+    <input type="email" name="email" id="femail" required>
     <h4>Message</h4>
     <textarea id="subject" name="subject" placeholder="Say hello!"></textarea>
     <input type="submit" id="fsubmit" value="Send message" />
-    <p id="message-sent">Message sent!</p>
+    <!-- <p id="message-sent">Message sent!</p> -->
   </form>
 </div>
 

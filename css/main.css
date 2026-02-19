@@ -52,6 +52,10 @@ i {
     font-size: 11px;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
 /*---------------------- TopNav --------------------- */
 
 .top-nav {
@@ -619,7 +623,7 @@ span {
 
 #form h2 {
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #contact h4 {
@@ -632,12 +636,19 @@ span {
     justify-content: center;
 }
 
+#contact-picture {
+    object-fit: cover;
+    width: 330px;
+    border-radius: 70% 44% 63% 44% / 74% 48% 54% 36%;
+    margin: auto;
+}
+
 form {
     display: grid;
     gap: 10px;
 }
 
-#femail {
+#femail, #fname {
     font-family: "IBM Plex Mono", monospace;
     width: 100%;
     border: 1.5px solid var(--gray);
