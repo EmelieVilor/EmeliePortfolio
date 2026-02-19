@@ -311,19 +311,19 @@ header h1 {
 }
 
 .line1::after {
-    max-width: 80%;
+    max-width: 85%;
 }
 
 .line2::after {
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .line3::after {
-    max-width: 55%;
+    max-width: 60%;
 }
 
 .line4::after {
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .line5::after {
@@ -331,7 +331,7 @@ header h1 {
 }
 
 .line6::after {
-    max-width: 65%;
+    max-width: 70%;
 }
 
 .line7::after {
@@ -339,11 +339,11 @@ header h1 {
 }
 
 .line8::after {
-    max-width: 90%;
+    max-width: 95%;
 }
 
 .line9::after {
-    max-width: 80%;
+    max-width: 85%;
 }
 
 .line10::after {
@@ -351,7 +351,7 @@ header h1 {
 }
 
 .line11::after {
-    max-width: 50%;
+    max-width: 55%;
 }
 
 .line12::after {
@@ -424,6 +424,10 @@ header h1 {
 
 .gitBtn {
     cursor: pointer;
+}
+
+.previewBtn {
+    background-color: var(--blue);
 }
 
 .cardBtns {
