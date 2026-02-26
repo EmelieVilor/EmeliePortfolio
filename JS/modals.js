@@ -1,14 +1,18 @@
-const openButtons = document.querySelectorAll(".modalBtn");
+const triggers = document.querySelectorAll(".modalBtn, .modal-link");
 const overlay = document.getElementById("modal-overlay");
 
-openButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const targetId = btn.getAttribute("data-target");
+triggers.forEach((trigger) => {
+  trigger.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetId = trigger.getAttribute("data-target");
     const modal = document.getElementById(targetId);
 
+    if (modal) {
     modal.classList.add("is-open");
     overlay.classList.add("is-open");
     document.body.style.overflow = "hidden";
+    }
   });
 });
 
