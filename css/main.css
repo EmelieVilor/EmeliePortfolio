@@ -357,7 +357,7 @@ header h1 {
 .card {
     position: relative;
     background-color: var(--lighter);
-    width: 350px;
+    width: 370px;
     height: 100%;
     padding: 25px 20px;
     display: flex;
@@ -373,10 +373,6 @@ header h1 {
         gap: 8px;
     }
 
-    p {
-        margin-top: 10px;
-    }
-
     i {
         font-size: 25px;
     }
@@ -386,6 +382,9 @@ header h1 {
     display: flex;
     gap: 8px;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 13px;
+
 }
 
 .tags p {
@@ -396,10 +395,11 @@ header h1 {
     display: flex;
     align-items: center;
     border-radius: 50px;
-    font-size: 11px;
-    text-align: center;
-    height: 32px;
+    font-size: 10px;
+    text-align: left;
+    height: 30px;
     line-height: 1.2;
+    
 }
 
 .modal-link {
