@@ -138,105 +138,119 @@
       <div class="projects-container">
         <div class="card">
           <a class="modal-link" data-target="project1"></a>
-          <h2>React Native App</h2>
-          <p>App made with React Native and Expo.</p>
+          <h2>Trivia App</h2>
+          <div class="tags">
+            <p>React Native</p><p>Expo</p><p>TypeScript</p>
+          </div>
+          <!-- <p>App made with React Native and Expo.</p>
           <p class="icons">
             <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i> <i class="fa-brands fa-react"></i>
-          </p>
+            ><i class="fa-brands fa-react"></i>
+          </p> -->
+
+          <div class="imgContainer">
+        <img src="/images/trivia_transpmock.png">
+        </div>
+
           <div class="cardBtns">
             <button class="modalBtn" id="modalBtn1" data-target="project1">
               Read More
             </button>
-            <button class="gitBtn">
+            <a class="gitBtn">
               Github <i class="fa-brands fa-github"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div class="card">
           <a class="modal-link" data-target="project2"></a>
           <h2>Kan Ban</h2>
-          <p>Responsive Kan Ban board with drag and drop.</p>
-          <p class="icons">
-            <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i> <i class="fa-brands fa-react"></i>
-          </p>
+          <div class="tags">
+            <p>JavaScript</p><p>React</p>
+          </div>
+          <div class="imgContainer">
+        <img src="/images/kanban_transmockup.png">
+        </div>
           <div class="cardBtns">
             <button class="modalBtn" id="modalBtn2" data-target="project2">
               Read More
             </button>
-            <button class="gitBtn">
+            <a class="gitBtn">
               Github <i class="fa-brands fa-github"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div class="card">
           <a class="modal-link" data-target="project3"></a>
           <h2>Dashboard</h2>
-          <p>Responsive dashboard with *features*.</p>
-          <p class="icons">
-            <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i
-            ><i class="fa-brands fa-js"></i> <i class="fa-brands fa-react"></i>
-          </p>
+            <div class="tags">
+            <p>JavaScript</p><p>API handling</p>
+          </div>
+          <div class="imgContainer">
+        <img src="/images/dashboard_transpmockup.png">
+        </div>
           <div class="cardBtns">
             <button class="modalBtn" id="modalBtn3" data-target="project3">
               Read More
             </button>
-            <button class="gitBtn">
+            <a class="gitBtn">
               Github <i class="fa-brands fa-github"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div class="card">
           <a class="modal-link" data-target="project4"></a>
-          <h2>Figma or Student portal</h2>
-          <p>
-            Figma or Student portal? 
-          </p>
-          <p class="icons">
-            <i class="fa-brands fa-figma"></i>
-            <i class="fa-solid fa-pencil"></i>
-          </p>
+          <h2>Student portal</h2>
+          <div class="tags">
+            <p>JavaScript</p><p>React</p><p>Bootstrap</p>
+          </div>
+          <div class="imgContainer">
+        <img src="/images/skolportal_mock.png">
+        </div>
           <div class="cardBtns">
             <button class="modalBtn" id="modalBtn4" data-target="project4">
               Read More
             </button>
-            <button class="gitBtn">
-              Download <i class="fa-solid fa-download"></i>
-            </button>
+            <a class="gitBtn">
+              Github <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
         <div class="card">
           <a class="modal-link" data-target="project5"></a>
           <h2>Master Thesis</h2>
-          <p>Master Thesis. Transitioning into an industrial symbiosis.</p>
-          <p class="icons">
-            <i class="fa-brands fa-figma"></i>
-            <i class="fa-solid fa-pencil"></i>
-          </p>
+          <div class="tags">
+            <p>Transition Design</p><p>UX</p><p>UI</p><p>Figma</p>
+          </div>
+          <div class="imgContainer">
+        <img src="/images/masterthesis_mock.png">
+        </div>
           <div class="cardBtns">
             <button class="modalBtn" id="modalBtn5" data-target="project5">
               Read More
             </button>
-            <button class="gitBtn">
+            <a class="downloadBtn" href="documents/Emelie_MasterThesis.pdf"
+              download="Emelie_MasterThesis">
               Download <i class="fa-solid fa-download"></i>
-            </button>
+            </a>
           </div>
         </div>
         <div class="card">
           <a class="modal-link" data-target="project6"></a>
           <h2>Bachelor Thesis</h2>
-          <p>Bachelor thesis. Designing for exploration and motivation.</p>
-          <p class="icons">
-            <i class="fa-solid fa-pencil"></i>
-          </p>
+          <div class="tags">
+            <p>Gamification</p><p>UX</p><p>JustInMind</p>
+          </div>
+          <div class="imgContainer">
+        <img src="/images/bachelor_mockup.png">
+        </div>
           <div class="cardBtns">
             <button class="modalBtn" id="modalBtn5" data-target="project6">
               Read More
             </button>
-            <button class="gitBtn">
+            <a class="downloadBtn" href="documents/Emelie_BachelorThesis.pdf"
+              download="Emelie_BachelorThesis">
               Download <i class="fa-solid fa-download"></i>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -248,8 +262,10 @@
       <div class="modal" id="project1">
         <div class="content">
           <span class="close-modal">&times;</span>
-          <h2>Student Portal</h2>
-          <h3>React | Bootstrap</h3>
+          <h2>Trivia App</h2>
+          <div class="tags">
+            <p>React Native</p><p>Expo</p><p>TypeScript</p>
+          </div>
           <div class="text-content">
             <img src="images/code1.jpg" />
             <div>
@@ -264,12 +280,12 @@
         </div>
 
         <div class="btnsModal">
-          <button class="gitBtn">
+          <a class="gitBtn">
             Github <i class="fa-brands fa-github"></i>
-          </button>
-          <button class="previewBtn">
+          </a>
+          <a class="previewBtn">
             Live Preview <i class="fa-solid fa-eye"></i>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -291,12 +307,12 @@
           </div>
         </div>
         <div class="btnsModal">
-          <button class="gitBtn">
+          <a class="gitBtn">
             Github <i class="fa-brands fa-github"></i>
-          </button>
-          <button class="previewBtn">
+          </a>
+          <a class="previewBtn">
             Live Preview <i class="fa-solid fa-eye"></i>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -318,19 +334,19 @@
           </div>
         </div>
         <div class="btnsModal">
-          <button class="gitBtn">
+          <a class="gitBtn">
             Github <i class="fa-brands fa-github"></i>
-          </button>
-          <button class="previewBtn">
+          </a>
+          <a class="previewBtn">
             Live Preview <i class="fa-solid fa-eye"></i>
-          </button>
+          </a>
         </div>
       </div>
 
       <div class="modal" id="project4">
         <div class="content">
           <span class="close-modal">&times;</span>
-          <h2>Figma Projects</h2>
+          <h2>School Portal</h2>
           <h3>UX Design | Figma</h3>
           <div class="text-content">
             <img src="images/code1.jpg" />
@@ -344,9 +360,9 @@
             </div>
           </div>
         </div>
-        <button class="gitBtn">
+        <a class="gitBtn">
           Github <i class="fa-brands fa-github"></i>
-        </button>
+        </a>
       </div>
 
       <div class="modal" id="project5">
@@ -357,6 +373,7 @@
           <div class="text-content">
             <img src="images/code1.jpg" />
             <div>
+              <p>Transitioning into an industrial symbiosis.</p>
               <p>Assignment, Execution, Reflection.</p>
               <ul>
                 <li>list item</li>
@@ -366,9 +383,9 @@
             </div>
           </div>
         </div>
-        <button class="gitBtn">
+        <a class="gitBtn">
           Download <i class="fa-solid fa-download"></i>
-        </button>
+        </a>
       </div>
 
       <div class="modal" id="project6">
@@ -379,6 +396,7 @@
           <div class="text-content">
             <img src="images/code1.jpg" />
             <div>
+              <p>Designing for motivation and exploration.</p>
               <p>Assignment, Execution, Reflection.</p>
               <ul>
                 <li>JustInMind</li>
@@ -388,9 +406,9 @@
             </div>
           </div>
         </div>
-        <button class="gitBtn">
+        <a class="gitBtn">
           Download <i class="fa-solid fa-download"></i>
-        </button>
+        </a>
       </div>
     </section>
     </main>
