@@ -3,6 +3,7 @@
 @media screen and (min-width: 800px) {
     .menu {
         display: flex;
+        align-items: center;
         top: 30px;
         gap: 15px;
         text-decoration: none;

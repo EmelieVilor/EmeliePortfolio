@@ -97,19 +97,31 @@ main {
     gap: 15px;
     text-decoration: none;
     margin: 0;
-    padding: 15px;
+    padding: 35px 25px;
     z-index: 1;
     background-color: var(--lighter);
     position: absolute;
-    top: 60px;
+    top: 50px;
     right: 20px;
     display: none;
+    text-align: center;
+
 }
 
 .menu a {
     color: var(--gray);
     text-decoration: none;
     transition: 0.2s ease-in;
+}
+
+#contact-link{
+    background-color: var(--blue);
+    padding: 7px 12px;
+    border-radius: 50px;
+}
+
+#contact-link:hover{
+    background-color: var(--tags);
 }
 
 .menu a:hover {
